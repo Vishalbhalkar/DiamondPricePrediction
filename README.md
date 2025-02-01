@@ -62,9 +62,9 @@ To set up the project locally, follow these steps:
    ```
 
 5. If a web application is implemented, start the app using:
-```bash
-python application.py
-```
+   ```bash
+   python application.py
+   ```
 Then, open your browser and go to `http://127.0.0.1:5000/`.
 
 ## 📊 Dataset
