@@ -5,15 +5,39 @@ The **Diamond Price Prediction** project aims to build a machine learning model 
 
 ## 📂 Project Structure
 ```
-📦 DiamondPricePrediction
-├── 📁 data                  # Dataset and preprocessing scripts
-├── 📁 notebooks             # Jupyter notebooks for EDA & model training
-├── 📁 src                   # Source code for data processing and modeling
-├── 📁 models                # Trained models and saved artifacts
-├── 📁 reports               # Project reports and analysis
-├── 📄 requirements.txt      # Required Python libraries
-├── 📄 README.md             # Project documentation
-└── 📄 app.py                # Web app (if applicable)
+📦 vishalbhalkar-diamondpriceprediction
+├── README.md                # Project documentation
+├── application.py           # Main application file
+├── requirements.txt         # Required Python libraries
+├── setup.py                 # Setup script for the project
+├── artifacts/               # Stored models and data artifacts
+│   ├── model.pkl
+│   ├── preprocessor.pkl
+│   ├── raw.csv
+│   ├── test.csv
+│   └── train.csv
+├── notebooks/               # Jupyter notebooks for EDA & model training
+│   ├── EDA.ipynb
+│   ├── Model Training.ipynb
+│   └── data/
+│       └── gemstone.csv
+├── src/                     # Source code for data processing and modeling
+│   ├── __init__.py
+│   ├── exception.py
+│   ├── logger.py
+│   ├── utils.py
+│   ├── components/          # Core processing components
+│   │   ├── __init__.py
+│   │   ├── data_ingestion.py
+│   │   ├── data_transformation.py
+│   │   └── model_trainer.py
+│   └── pipelines/           # Training and prediction pipelines
+│       ├── __init__.py
+│       ├── prediction_pipeline.py
+│       └── training_pipeline.py
+└── templates/               # HTML templates for web application
+    ├── form.html
+    └── index.html
 ```
 
 ## 🔧 Installation
